@@ -1,0 +1,32 @@
+
+# Basic script to analyze data in Python 
+import pandas as pd
+
+# Read in the CSV file
+df = pd.read_csv('file.csv')
+
+# Remove rows with blank cells
+df = df.dropna()
+
+# Calculate the mean of a column
+mean = df['column'].mean()
+
+# Calculate the median of a column
+median = df['column'].median()
+
+# Calculate the standard deviation of a column
+std = df['column'].std()
+
+# Calculate the min and max values of a column
+min_value = df['column'].min()
+max_value = df['column'].max()
+
+# Calculate the number of rows in the DataFrame
+num_rows = len(df)
+
+print("Mean:", mean)
+print("Median:", median)
+print("Standard Deviation:", std)
+print("Min:", min_value)
+print("Max:", max_value)
+print("Number of rows:", num_rows)
